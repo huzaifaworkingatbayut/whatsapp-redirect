@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<title></title>
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="website" property="og:type" />
+	<meta content="" property="og:description" />
+	<meta content="https://98za4j1wu3.preview-beefreecontent.com/7kND" property="og:url" />
+	<meta content="https://pro-bee-beepro-thumbnail.getbee.io/messages/693871/676485/1953528/13064162_large.jpg" property="og:image" />
+	<meta content="" property="og:title" />
+	<meta content="" name="description" />
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		.bee-html-block {
+			text-align: center
+		}
+
+		.bee-row-1,
+		.bee-row-1 .bee-row-content {
+			background-repeat: no-repeat
+		}
+
+		body {
+			background-color: #ffffff;
+			color: #000000;
+			font-family: Arial, Helvetica, sans-serif
+		}
+
+		a {
+			color: #7747FF
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 1280px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		@media (max-width:768px) {
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+		}
+
+		.bee-row-1 .bee-row-content {
+			color: #000000
+		}
+
+		.bee-row-1 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+	</style>
+	<script async defer src="https://www.google.com/recaptcha/api.js"></script>
+	<script>
+		function onSubmit(token) {
+			for (const form of document.getElementsByClassName("recaptcha-form")) {
+				if (form.checkValidity()) {
+					form.submit();
+				} else {
+					grecaptcha.reset();
+					form.reportValidity();
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="bee-page-container">
+		<div class="bee-row bee-row-1">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-html-block">
+						<!DOCTYPE html>
+
+						<meta charset="utf-8" />
+						<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+						<title>Connect with your Salesperson</title>
+						<style>
+							body {
+								font-family: Arial, sans-serif;
+								text-align: center;
+								padding: 20px;
+								background-color: #f4f7f6;
+								color: #333;
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+								align-items: center;
+								min-height: 100vh;
+								margin: 0;
+							}
+
+							h1 {
+								color: #2c3e50;
+								margin-bottom: 20px;
+							}
+
+							p {
+								margin-top: 10px;
+								font-size: 1.1em;
+								max-width: 600px;
+							}
+
+							#callButton {
+								display: inline-block;
+								background-color: #25D366;
+								/* WhatsApp green */
+								color: white;
+								padding: 15px 30px;
+								font-size: 1.2em;
+								font-weight: bold;
+								text-decoration: none;
+								border-radius: 50px;
+								margin-top: 30px;
+								transition: background-color 0.3s ease;
+								box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+							}
+
+							#callButton:hover {
+								background-color: #1DA851;
+							}
+
+							.message-box {
+								background-color: #fff;
+								padding: 30px;
+								border-radius: 8px;
+								box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+								max-width: 400px;
+								width: 90%;
+							}
+
+							.spinner {
+								border: 4px solid rgba(0, 0, 0, 0.1);
+								border-left: 4px solid #007bff;
+								border-radius: 50%;
+								width: 30px;
+								height: 30px;
+								animation: spin 1s linear infinite;
+								margin: 20px auto;
+								display: none;
+								/* Hide until needed, though with direct button, not really needed */
+							}
+
+							@keyframes spin {
+								0% {
+									transform: rotate(0deg);
+								}
+
+								100% {
+									transform: rotate(360deg);
+								}
+							}
+						</style>
+						<div class="message-box">
+							<h1>Connect with your Salesperson</h1>
+							<div class="spinner"></div>
+							<p id="instructionText">Click the button below to call your dedicated salesperson:</p>
+							<a href="#" id="callButton" style="display:none;">Call Now</a>
+							<p id="fallbackText" style="font-size: 0.9em; color: #777; margin-top: 20px;">If the call doesn't start automatically, please check your phone's settings or manually dial.</p>
+						</div>
+						<script>
+							window.onload = function() {
+								const urlParams = new URLSearchParams(window.location.search);
+								const phoneNumber = urlParams.get('phone');
+								const callButton = document.getElementById('callButton');
+								const instructionText = document.getElementById('instructionText');
+								const fallbackText = document.getElementById('fallbackText');
+
+								if (phoneNumber) {
+									// This line ensures no duplicate '+'
+									const formattedPhoneNumber = phoneNumber.startsWith('+') ? phoneNumber : '+' + phoneNumber;
+
+									callButton.href = 'tel:' + formattedPhoneNumber;
+									callButton.style.display = 'inline-block'; // Show the button
+									instructionText.innerText = 'Click the button below to call your dedicated salesperson:';
+									fallbackText.innerText = `Please ensure your phone number includes the country code (e.g., +97150...). If you have trouble, try calling: ${formattedPhoneNumber}`;
+								} else {
+									instructionText.innerHTML = '<h1>Error: Phone number missing.</h1><p>The link seems to be incomplete. Please ensure you clicked the correct link from WhatsApp or contact support.</p>';
+									fallbackText.style.display = 'none'; // Hide fallback if no number
+								}
+							};
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
